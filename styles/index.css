@@ -1,0 +1,26 @@
+.navBar {
+  list-style: none;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  min-width: 30rem;
+  width: 100%;
+  max-width: 60rem;
+  gap: 1.6rem;
+  padding: 2.5rem 1.6rem;
+}
+.container img {
+  max-width: 27.5rem;
+}
+.container h1 {
+  color: var(--primary-color);
+  font-family: var(--font-title);
+  font-size: var(--font-size-title);
+}
+.container p {
+  font-family: var(--font-paragraph);
+  font-size: var(--font-size-p);
+}

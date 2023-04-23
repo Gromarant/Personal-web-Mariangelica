@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  min-width: 30rem;
+  width: 100%;
+  max-width: 60rem;
+  gap: 1.6rem;
+  padding: 2.5rem 1.6rem;
+}
+.container h1 {
+  color: var(--primary-color);
+  font-size: var(--font-size-title);
+  font-weight: 300;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 0.8rem;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  box-shadow: #00000029 0px 1px 4px;
+}
+.project-card img {
+  width: 100%;
+  max-width: 60rem;
+}
+.project-card h2 {
+  font-size: 1.6rem;
+}
+.project-card p {
+  font-size: var(--font-size-p);
+}
+.media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.4rem;
+}
