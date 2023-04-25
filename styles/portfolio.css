@@ -3,9 +3,8 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
-  min-width: 30rem;
+  min-width: 36rem;
   width: 100%;
-  max-width: 60rem;
   gap: 1.6rem;
   padding: 2.5rem 1.6rem;
 }
@@ -15,28 +14,68 @@
   font-weight: 300;
 }
 
-.project-card {
+.carousel {
   display: flex;
   flex-direction: column;
-  width: 80%;
-  gap: 0.8rem;
-  padding: 2rem;
-  border-radius: 0.8rem;
-  box-shadow: #00000029 0px 1px 4px;
-}
-.project-card img {
-  width: 100%;
-  max-width: 60rem;
-}
-.project-card h2 {
-  font-size: 1.6rem;
-}
-.project-card p {
-  font-size: var(--font-size-p);
+  align-items: center;
+  gap: 1.6rem;
+  max-width: 38rem;
 }
 .media {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 1.4rem;
+}
+.project img:hover {
+  background-color: #ffffff;
+  opacity: 0.6;
+}
+.project h2 {
+  font-size: var(--font-size-title);
+  color: var(--primary-color);
+}
+.project p {
+  font-size: var(--font-size-p);
+  color: #4b4b4b;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.project-resource span {
+  padding: 1.4rem;
+  color: var(--primary-color);
+  font-size: 2.4rem;
+  border: none;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  background-color: #ffffff;
+}
+@media (min-width: 768px) {
+  .carousel {
+    max-width: 60rem;
+    gap: 3rem;
+    padding: 2.5rem 1.6rem;
+  }
+  .foot-container {
+    margin-bottom: 2rem;
+  }
+  .footer-navIcon {
+    border-radius: 0.8rem;
+  }
+  .navBar > ul > li:hover {
+    background-color: var(--font-color-light);
+  }
+  .footer-navIcon {
+    border-radius: 0.8rem;
+  }
+  .foot-container  {
+    margin-bottom: 2rem;
+  }
 }

@@ -1,6 +1,7 @@
 .navBar {
   list-style: none;
 }
+
 .container {
   display: flex;
   flex-direction: column;
