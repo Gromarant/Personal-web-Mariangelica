@@ -147,13 +147,16 @@ header {
 }
 
 @media (min-width: 768px) {
-  section.top-nav, .mobile-nav {
+  section.top-nav {
     flex-direction: row;
     justify-content: space-between;
     max-width: 100rem;
     margin: 0 auto;
   }
-
+  .mobile-nav {
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+  }
   .navBar > a:hover, .navBar > a:active {
     background-color: var(--font-color-light);
     border-radius: 0.8rem;
