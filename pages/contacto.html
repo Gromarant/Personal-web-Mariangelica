@@ -25,25 +25,29 @@
     <main class="container">
       <h1 class="main-title">Sigamos en contacto</h1>
       <section class="hero-contact">
-        <form method="POST" id="contactForm" name="contactForm">
-          <div>
-            <label for="name">Nombre</label>
-            <input type="text" id="name" name="name" placeholder="Dejame tu nombre" minlength="3" maxlength="20" required>
+
+        <form id="contactForm" name="contactForm">
+          <div class="name-section">
+            <label for="name">Nombre Completo</label>
+            <input type="text" id="name" name="name" placeholder="Dejame tu nombre" required>
           </div>
-          <div>
+          <div class="email-section">
             <label for="email">Correo</label>
-            <input type="email" id="email" name="email" placeholder="Dirección de correo">
+            <input type="email" id="email" name="email" placeholder="Dirección de correo.com" required>
           </div>
-          <div>
+          <div class="subject-section">
             <label for="subject">Motivo de contacto</label>
-            <input type="text" name="subject" id="subject" placeholder="Motivo de contacto">
+            <input type="text" name="subject" id="subject" placeholder="Motivo de contacto" required>
           </div>
-          <textarea name="message" id="message" cols="30" rows="7" placeholder="Si tienes otro motivo, escríbelo aquí"></textarea>
+          <div class="textArea-section">
+            <textarea name="message" id="message" cols="30" rows="7" placeholder="Si tienes otro motivo, escríbelo aquí, son 280 caracteres."></textarea>
+          </div>
+          <div class="form-btns">
+            <input class="btn reset" type="reset" value="reset"></input>
+            <input class="btn submit" type="submit" value="Enviar"></input>
+          </div>
         </form>
-        <div class="form-btns">
-          <input class="btn reset" type="reset" value="reset"></input>
-          <input class="btn submit" type="submit" value="Enviar"></input>
-        </div>
+
       </section>
       <section class="media">
         <a href="https://www.linkedin.com/in/mariangelica-rodr%C3%ADguez-p%C3%A9rez/" title="LinkeInd" target="
@@ -68,6 +72,7 @@
           <span class="btn-mark"></span></a>
       </section>
     </footer>
+    <script src="../index.js"></script>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
   </body>
 </html>
