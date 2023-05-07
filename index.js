@@ -26,11 +26,15 @@ const handleForm = (e) => {
     if (!helperText){
       setMessage(nameSection, 'El nombre es muy largo');
     }
-  } else if (!email.endsWith('.com')) {
+  }
+
+  if (!email.endsWith('.com')) {
     if (!helperText){
       setMessage(emailSection, 'Solo admite email terminados en .com');
     }
-  } else if (subject.length < 3) {
+  }
+
+  if (subject.length < 3) {
     if (!helperText){
       setMessage(subjectSection, 'El mensaje del motivo es muy corto');
     }
@@ -38,12 +42,12 @@ const handleForm = (e) => {
     if (!helperText){
       setMessage(subjectSection, 'El mensaje del motivo debe ser más largo');
     }
-  } else if (message.length > 180) {
+  }
+  
+  if (message.length > 280) {
     if (!helperText){
       setMessage(textAreaSection, 'El mensaje del área de texto debe ser de máximo 280 caracteres');
     }
-  } 
-
-
+  }
 }
 document.querySelector('form').addEventListener("submit", handleForm);
