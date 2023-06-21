@@ -1,7 +1,7 @@
 const setMessage = (father, msj) => {
   const pTag = document.createElement('p');
   pTag.className = 'helper';
-  pTag.innerHTML = msj;
+  pTag.setHTML(msj);
   father.appendChild(pTag);
 }
 
@@ -19,7 +19,8 @@ const handleForm = (e) => {
   const textAreaSection = document.querySelector('.textArea-section');
 
   let validated = true
-  
+  const mailRegex = new RegExp(/^[a-z0-9._%+-]{1,64}@(?:[a-z0-9-]{1,63}\.){1,125}[a-z]{2,63}$/);
+
   if( name.length < 3) {
     validated = false;
     if (!helperText){
@@ -32,7 +33,7 @@ const handleForm = (e) => {
     }
   }
 
-  if (!email.endsWith('.com')) {
+  if (!email.match(mailRegex)) {
     validated = false;
     if (!helperText){
       setMessage(emailSection, 'Solo admite email terminados en .com');
